@@ -1,0 +1,28 @@
+<mat-card class="example-card">
+  <div class="head">
+    <h1>e-Commerce Gapsi * Lista de proveedores.</h1>
+  </div>
+  <div class="buttons">
+    <button mat-raised-button color="primary">Agregar</button>
+  </div>
+  <div class="body">
+    <br />
+    <div class="table">
+      <div *ngFor="let item of listProviders" class="item">
+        <div>{{ item.name }}</div>
+        <div>{{ item.businessName }}</div>
+        <div>{{ item.direction }}</div>
+      </div>
+    </div>
+    <br />
+  </div>
+  <div class="footer">
+    <mat-paginator
+      [length]="100"
+      [pageSize]="10"
+      [pageSizeOptions]="[5, 10, 25, 100]"
+      aria-label="Select page"
+    >
+    </mat-paginator>
+  </div>
+</mat-card>

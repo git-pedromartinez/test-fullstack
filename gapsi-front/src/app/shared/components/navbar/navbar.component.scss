@@ -1,0 +1,21 @@
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(206, 206, 206);
+  color: #045db5;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  li {
+    list-style-type: none;
+    padding-right: 16px;
+  }
+  li:hover{
+    border-bottom: 1px solid #045db5;
+    cursor: pointer;
+  }
+}

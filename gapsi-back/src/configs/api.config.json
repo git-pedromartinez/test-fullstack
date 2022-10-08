@@ -1,0 +1,8 @@
+{
+    "develop": {
+        "host": "localhost",
+        "port": 3000,
+        "bd": "bd.json",
+        "bd_inital": "bd_initial.json"
+    }
+}
